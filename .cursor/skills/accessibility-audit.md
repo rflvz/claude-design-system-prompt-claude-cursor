@@ -47,7 +47,7 @@ For every interactive element:
 
 ### Agent 4: Motion, Forms, and Misc
 
-1. **`prefers-reduced-motion` respected.** Animations and transitions over a couple hundred milliseconds should have a `@media (prefers-reduced-motion: reduce)` block that shortens or removes them.
+1. `**prefers-reduced-motion` respected.** Animations and transitions over a couple hundred milliseconds should have a `@media (prefers-reduced-motion: reduce)` block that shortens or removes them.
 2. **No flashing content.** Anything flashing more than 3 times per second can trigger photosensitive epilepsy. Auto-playing videos, strobe effects, rapid loops — flag and require pause control.
 3. **Form errors.** Every error message is specific ("Email address is invalid" not "Invalid"), tied to its field (visually adjacent and via `aria-describedby`), and announced to screen readers.
 4. **Required fields.** Marked with text and/or icon plus the `required` attribute, not color alone.
@@ -63,6 +63,7 @@ Fix each issue directly. For ambiguous cases (e.g., "this contrast is 4.4:1, ver
 If a finding is a clear false positive or out-of-scope (e.g., the agent flagged a third-party embed you can't modify), note it and skip it. Don't argue with the finding — just move on.
 
 When done, summarize:
+
 - Issues found by category (contrast / semantic / keyboard / motion-forms)
 - Issues fixed
 - Any issues left for the user (third-party content, ambiguous cases, design decisions outside accessibility)

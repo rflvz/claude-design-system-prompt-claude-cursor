@@ -21,6 +21,7 @@ Walk through the design and flag every instance of the following. Single agent �
 ### 1. Aggressive gradients
 
 Flag:
+
 - Rainbow / 3+ color gradients (`linear-gradient(135deg, #FF00FF, #00FFFF, #FFFF00)` and similar)
 - Saturated purple-to-pink, orange-to-pink, or other "trendy" two-color blends used for hero backgrounds, buttons, or large surfaces
 - Gradient overlays on imagery that don't improve legibility or hierarchy
@@ -30,11 +31,13 @@ Fix: replace with flat color from the design system or a subtle, on-tone gradien
 ### 2. Emoji as decoration
 
 Flag:
+
 - Emoji prepending headlines, button text, or list items where the brand doesn't use emoji (`🚀 Get Started`, `✅ Track progress`)
 - Repeated emoji used as visual filler (`🎉🎉🎉`)
 - Emoji as bullet markers when they don't add meaning
 
 Keep emoji only if:
+
 - The brand explicitly uses them in their existing materials
 - The emoji is functional (a status indicator, a category marker tied to real meaning)
 - The user asked for them
@@ -55,6 +58,7 @@ Flag the exact pattern:
 Used as the *default* card or container style across the design. This combination is so overused it reads as "default SaaS template."
 
 Keep only if:
+
 - The left border is purposeful (a callout, an alert, a status indicator) and used for that meaning specifically
 - It's coming from an existing design system you're matching
 
@@ -63,11 +67,13 @@ Fix: drop the left border for default cards. Use a subtle shadow, a thin all-aro
 ### 4. Hand-drawn SVG illustrations
 
 Flag:
+
 - Custom SVG illustrations of people, scenes, abstract concepts that aren't drawn by a skilled illustrator
 - "AI-style" character illustrations (giant heads, flat-color blobs, identical posing)
 - Decorative SVG that's clearly placeholder-quality but presented as final
 
 Fix: replace with one of:
+
 - Real photography (Unsplash, brand assets)
 - Professional illustration (icon library or commissioned)
 - Honest placeholder — striped background with monospace label like `product shot (1200×800)`
@@ -77,6 +83,7 @@ A placeholder is better than a bad illustration. It signals "asset needed" witho
 ### 5. Overused fonts as defaults
 
 Flag bare use of:
+
 - Inter
 - Roboto
 - Arial
@@ -86,6 +93,7 @@ Flag bare use of:
 Used as defaults without a brand reason.
 
 Keep if:
+
 - The brand specifies them
 - The user asked for them
 - They're appropriate for the medium and the user has confirmed
@@ -97,6 +105,7 @@ Fix: pick a font with intent. If you don't have a brand to draw from, suggest 2�
 Flag exact `#FFFFFF` background paired with exact `#000000` text. This combination is harsh, cold, and reads as unfinished.
 
 Fix: subtly tone both. Examples:
+
 - Warm: `#FFFAF0` background, `#2D2118` text
 - Cool: `#F5F7FA` background, `#1F2937` text
 - Neutral: `#FAFAFA` background, `#1A1A1A` text
@@ -120,6 +129,8 @@ Fix: snap to a 4px or 8px scale. Define spacing tokens (`--space-xs: 4px` throug
 Apply fixes directly. For decisions where multiple options are reasonable (e.g., which non-Inter font to use), pick the most defensible default and note the choice in your summary so the user can override.
 
 When done, summarize:
+
 - Tropes found, by category
 - Fixes applied
 - Open questions for the user (font choice, asset replacement, etc.)
+
